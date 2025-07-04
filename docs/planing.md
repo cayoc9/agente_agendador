@@ -12,11 +12,11 @@ Implementar um agente virtual funcional para a "Agência Criativa XYZ" que utili
    - `clickup_models.py` - Modelos de dados (Cliente, Task)
    - `clickup_crm_service.py` - Snierviços CRM (criar lista, tasks, etc.)
 3. **Sistema de testes** completo com mocks
-4. **Bot Telegram básico** com fluxo de conversação
+4. **Bot Whatsapp básico** com fluxo de conversação
 5. **Configuração de ambiente** (.env)
 
 ### 🔄 O que precisa ser integrado:
-1. **Conectar o bot Telegram com o ClickUp CRM**
+1. **Conectar o bot Whatsapp com o ClickUp CRM**
 2. **Implementar geração de horários dinâmicos**
 3. **Adicionar geração de protocolo aleatório**
 4. **Implementar confirmação de agendamento**
@@ -24,11 +24,11 @@ Implementar um agente virtual funcional para a "Agência Criativa XYZ" que utili
 
 ## 🚀 PLANO DE IMPLEMENTAÇÃO
 
-### FASE 1: Integração ClickUp + Bot Telegram (Prioridade ALTA)
+### FASE 1: Integração ClickUp + Bot Whatsapp (Prioridade ALTA)
 
 #### 1.1 Atualizar configuração
 - [ ] Atualizar `src/config.py` para incluir variáveis do ClickUp
-- [ ] Criar arquivo `.env` baseado no `env.example`
+- [ x ] Criar arquivo `.env` baseado no `env.example`
 - [ ] Adicionar dependências do ClickUp no `requirements.txt`
 
 #### 1.2 Integrar ClickUp no fluxo do bot
@@ -100,7 +100,7 @@ CLICKUP_CRM_LIST_NAME = os.getenv('CLICKUP_CRM_LIST_NAME', 'CRM Clientes')
 ```
 agente_agendador/
 ├── src/
-│   ├── main.py                    # Bot Telegram + fluxo principal
+│   ├── main.py                    # Bot Whatsapp + fluxo principal
 │   ├── config.py                  # Configurações (atualizado)
 │   ├── clickup_client.py          # Cliente HTTP ClickUp ✅
 │   ├── clickup_models.py          # Modelos de dados ✅
