@@ -1,0 +1,7 @@
+# Dependências principais do projeto
+python-telegram-bot
+crewai
+gspread
+google-auth
+google-api-python-client
+python-dotenv
